@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coming soon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="coming.css" />
+  </head>
+  <body>
+    <div class="my-container">
+      <div class="left">
+        <img src="/shop/Screenshot 2024-08-11 164910-Photoroom.png" alt="" />
+      </div>
+
+      <div class="right">
+        <h1>Coming Soon</h1>
+        <p>Hi, we will be back with some awesome features in</p>
+
+        <div class="counter">
+          <div class="unit-container">
+            <div class="unit">Days</div>
+            <div class="value day">100</div>
+          </div>
+
+          <div class="unit-container">
+            <div class="unit">Hrs</div>
+            <div class="value hour">11</div>
+          </div>
+
+          <div class="unit-container">
+            <div class="unit">Min</div>
+            <div class="value minute">54</div>
+          </div>
+
+          <div class="unit-container">
+            <div class="unit">Sec</div>
+            <div class="value second">28</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <script>
+        // Set the target date and time for the countdown
+        const targetDate = new Date('2024-12-31T23:59:59').getTime();
+      
+        function updateCountdown() {
+          const now = new Date().getTime();
+          const distance = targetDate - now;
+      
+          if (distance < 0) {
+            // If countdown is finished
+            document.querySelector('.day').textContent = '0';
+            document.querySelector('.hour').textContent = '0';
+            document.querySelector('.minute').textContent = '0';
+            document.querySelector('.second').textContent = '0';
+            clearInterval(countdownInterval);
+            return;
+          }
+      
+          // Calculate days, hours, minutes, and seconds
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+          // Update the countdown elements
+          document.querySelector('.day').textContent = days;
+          document.querySelector('.hour').textContent = hours;
+          document.querySelector('.minute').textContent = minutes;
+          document.querySelector('.second').textContent = seconds;
+        }
+      
+        // Update countdown every second
+        const countdownInterval = setInterval(updateCountdown, 1000);
+      
+        // Initial call to display the countdown immediately
+        updateCountdown();
+      </script>
+      
+    <!-- <script src="coming.js"></script> -->
+  </body>
+</html>

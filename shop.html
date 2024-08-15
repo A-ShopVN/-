@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>A-ShopVN</title>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <i class='bx bxs-cart-alt'></i>
+            <div class="logo-name"><span>A-</span>ShopVN</div>
+        </a>
+        <ul class="side-menu">
+            <li><a href="#Dashboard" class="tab-item" data-tab="Dashboard"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
+            <li><a href="#Shop" class="tab-item" data-tab="Shop"><i class='bx bx-store-alt'></i>Shop</a></li>
+            <li><a href="#About" class="tab-item" data-tab="About"><i class='bx bx-group'></i>About</a></li>
+            <li><a href="#Earns" class="tab-item" data-tab="Earns"><i class='bx bx-coin'></i>Money Makers Hub</a></li>
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="#" class="logout" id="logout">
+                    <!-- <i class='bx bx-log-out-circle'></i>
+                    Logout -->
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+        
+        <!-- Navbar -->
+        <nav>
+            <i class='bx bx-menu'></i>
+             <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...can't work">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label>
+            <!-- Biểu tượng chuông thông báo -->
+                <div class="notification">
+                    <span class="notif">
+                        <i class="bx bx-bell"></i> <!-- Biểu tượng chuông -->
+                        <span class="count">0</span> <!-- Số lượng thông báo -->
+                    </span>
+                    <!-- Phần hiển thị thông báo -->
+                    <div class="notification-dropdown">
+                        <div class="no-notifications">
+                            <p>Don't have notification</p>
+                        </div>
+                        <ul class="notification-list">
+                            <!-- Danh sách thông báo sẽ được thêm vào đây -->
+                        </ul>
+                    </div>
+                </div>
+
+                <a href="#" class="profile" id="profiles">
+                    <!-- <img src="" alt="Profile Image"> -->
+                    <span id="user-email">Hello User</span>
+                </a>
+                
+                
+        </nav>
+
+        <!-- End of Navbar -->
+         <!-- shop -->
+        <div class="shop tab-content" id="Shop">
+            <!-- Thẻ sản phẩm 3D -->
+            <div class="flip-card-container">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://down-bs-vn.img.susercontent.com/vn-11134201-7r98o-lyvxvc2ii4i54d.webp" alt="Product Image" class="product-image">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>L'Oreal Paris Micellar Water 400ml</h3>
+                            <p>L'Oreal Paris Micellar Water 400ml is a gentle makeup remover that cleanses deeply without irritation. Suitable for all skin types, it effectively removes dirt and makeup.</p>
+                            <a href="https://s.shopee.vn/7fGD48ty6Q" target="_blank" class="buy-now-btn" target="_blank">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://down-bs-vn.img.susercontent.com/vn-11134201-7r98o-lyvxugp7z8lp92.webp" alt="Product Image" class="product-image">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>L'Oreal Paris UV Defender Serum 50ml SPF 50++</h3>
+                            <p>L'Oreal Paris UV Defender Serum 50ml SPF 50++ offers high-level sun protection with a lightweight formula. It guards against UV rays while hydrating and protecting your skin from daily environmental stressors.</p>
+                            <a href="https://s.shopee.vn/2frX7IMBhh" target="_blank" class="buy-now-btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://down-bs-vn.img.susercontent.com/vn-11134207-7r98o-lypxr9pyoashde.webp" alt="Product Image" class="product-image">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Garnier Micellar Cleansing Water 400ml</h3>
+                            <p>Garnier Micellar Cleansing Water 400ml effectively removes makeup and impurities with a gentle, no-rinse formula. It cleanses and soothes the skin, leaving it fresh and refreshed without irritation.</p>
+                            <a href="https://s.shopee.vn/6V4FgVgoD1" target="_blank" class="buy-now-btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://down-cvs-vn.img.susercontent.com/sg-11134201-7rd6k-lvx0cc1lwvit68.webp" alt="Product Image" class="product-image">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3> L'Oreal Paris</h3>
+                            <p>L'Oréal Paris offers high-quality beauty and skincare solutions. Their products are known for advanced formulations, delivering effective results for radiant and healthy skin.</p>
+                            <a href="https://s.shopee.vn/1B2jKolMPt" target="_blank" class="buy-now-btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://down-cvs-vn.img.susercontent.com/vn-11134201-7r98o-ltlabpm9grzh8e.webp" alt="Product Image" class="product-image">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>L'Oreal Paris Pure Revitalift Hyaluronic Acid 95ml</h3>
+                            <p>L'Oréal Paris Pure Revitalift Hyaluronic Acid 95ml deeply hydrates and revitalizes skin, reducing wrinkles and enhancing firmness for a youthful glow. Perfect for a smoother, plumper complexion.</p>
+                            <a href="https://s.shopee.vn/4Kzl6wW6BU" target="_blank" class="buy-now-btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://down-cvs-vn.img.susercontent.com/vn-11134201-7r98o-ltlabvb154eo79.webp" alt="Product Image" class="product-image">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3> L'Oreal Paris Revitalift Crystal Micellar Water 95ml</h3>
+                            <p>L'Oréal Paris Revitalift Crystal Micellar Water 95ml cleanses and brightens the skin, removing impurities and makeup while refreshing your complexion for a radiant, clear look.</p>
+                            <a href="https://s.shopee.vn/1VfZjrzVxw" target="_blank" class="buy-now-btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://down-cvs-vn.img.susercontent.com/vn-11134207-7r98o-lx5p59talj2z91.webp" alt="Product Image" class="product-image">
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Khăn mặt khô Chillwipes dùng 1 lần lau khô, lau ướt - Giấy lau mặt dùng một lần</h3>
+                            <p>Chillwipes dry face towels are ideal for one-time use, perfect for both dry and wet wiping. These disposable face wipes offer convenience and hygiene for your daily routine.</p>
+                            <a href="https://s.shopee.vn/3q3UWI54GQ" target="_blank" class="buy-now-btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+
+        </div>
+        <!-- about-->
+         <div class="about tab-content" id="About">
+            <article class="card__article">
+                <div class="card__profile">
+                   <img src="/shop/Screenshot 2024-08-11 164910-Photoroom.png" alt="image" class="card__profile-img">
+                </div>
+                
+                <div class="card__tooltip">
+                   <div class="card__content">
+                      <header class="card__header">
+                         <span>Social</span>
+                         
+                         <div class="card__social"> 
+                            <a href="" target="_blank">
+                                <i class='bx bxl-facebook' ></i>
+                            </a>
+       
+                            <a href="https://github.com/" target="_blank">
+                                <i class='bx bxl-github'></i>
+                            </a>
+       
+                            <a href="" target="_blank">
+                                <i class='bx bxl-telegram'></i>
+                            </a>
+                         </div>
+                      </header>
+       
+                      <div class="card__data">
+                         <div class="card__image">
+                            <div class="card__mask">
+                               <img src="/shop/me.png" alt="image" class="card__img">
+                            </div>
+                            
+                            <span class="card__status"></span>
+                         </div>
+       
+                         <h2 class="card__name">Dang Quang Canh</h2>
+                         <h3 class="card__profession">A-ShopVN is where quality meets trust. We've carefully curated the best products to meet the highest standards. Our team is dedicated to ensuring your satisfaction with exceptional service before, during, and after your purchase. Trust A-Shop for not just shopping, but a valuable experience.</h3>
+       
+                         <a href="#" class="card__button">
+                            <i class="ri-chat-3-line"></i> <span>Follow Us</span>
+                         </a>
+                      </div>
+                   </div>
+                </div>
+             </article>
+             
+         </div>
+         <!-- end of about -->
+          <!-- earns -------------------------------------------------------------------------------->
+           <div class="earns tab-content" id="Earns">
+            <div class="carousel">
+                <div class="list">
+                    <div class="item">
+                        <!-- <img src="https://app.kiemlua.vn/img/KiemLua-Logo.png"> -->
+                        <div class="introduce">
+                            <div class="title">Web MMO</div>
+                            <div class="topic">Kiemlua</div>
+                            <div class="des">
+                                <!-- 20 lorem -->
+                                Kiemlua.vn là một trang web giúp người dùng kiếm tiền online thông qua các nhiệm vụ đơn giản như xem video, làm khảo sát, hoặc tải ứng dụng. Trang web dễ sử dụng, uy tín, và hỗ trợ thanh toán nhanh chóng.
+                            </div>
+                            <button class="seeMore">SEE MORE &#8599</button>
+                        </div>
+                        <div class="detail">
+                            <div class="title">Kiemlua</div>
+                            <div class="des">
+                                <!-- lorem 50 -->
+                                Kiemlua.vn là một trang web MMO uy tín tại Việt Nam, chuyên cung cấp các cơ hội kiếm tiền online thông qua các nhiệm vụ đơn giản và đa dạng. Người dùng có thể dễ dàng tham gia, thực hiện các công việc như khảo sát, xem video, tải ứng dụng và nhận thưởng ngay lập tức. Kiemlua.vn cam kết thanh toán nhanh chóng và hỗ trợ người dùng tận tình, tạo ra một cộng đồng kiếm tiền online lành mạnh và tin cậy.
+                            </div>
+                            
+                            <div class="checkout">
+                                <button><a href="https://kiemlua.vn/ref/NLuJLiMc33" target="_blank">Get Now</a></button>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="item">
+                        <!-- <img src="https://app.golike.net/img/golike-logo.8423b5bb.svg"> -->
+                        <div class="introduce">
+                            <div class="title">App/Web MMO</div>
+                            <div class="topic">Golike</div>
+                            <div class="des">
+                                <!-- 20 lorem -->
+                                GoLike là nền tảng kiếm tiền online qua các nhiệm vụ mạng xã hội như like, follow, giúp bạn tăng thu nhập dễ dàng.
+                            </div>
+                            <button class="seeMore">SEE MORE &#8599</button>
+                        </div>
+                        <div class="detail">
+                            <div class="title">Golike</div>
+                            <div class="des">
+                                <!-- lorem 50 -->
+                                GoLike.net là nền tảng giúp bạn kiếm tiền online thông qua việc thực hiện các nhiệm vụ trên mạng xã hội như like bài viết, follow tài khoản và chia sẻ nội dung. Với quy trình đơn giản và thanh toán minh bạch, GoLike.net mang đến cơ hội tăng thu nhập nhanh chóng và linh hoạt cho mọi người.
+                            </div>
+                            <div class="checkout">
+                                
+                                <button><a href="http://903.golike88.com/share/8ll712.html?referral_code=nvh9998" target="_blank">Get Now</a></button>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="item">
+                        <!-- <img src="/shop/download.png"> -->
+                        <div class="introduce">
+                            <div class="title">App MMO</div>
+                            <div class="topic">X world</div>
+                            <div class="des">
+                                <!-- 20 lorem -->
+                                "X World là nền tảng giải trí trực tuyến đa dạng, mang đến cơ hội kiếm tiền từ các hoạt động tương tác, quảng cáo, và chia sẻ nội dung, tạo trải nghiệm giải trí thú vị và sinh lời."
+                            </div>
+                            <button class="seeMore">SEE MORE &#8599</button>
+                        </div>
+                        <div class="detail">
+                            <div class="title">X world</div>
+                            <div class="des">
+                                <!-- lorem 50 -->
+                                "X World là nền tảng giải trí trực tuyến tiên tiến, kết hợp game, video, và mạng xã hội, mang đến cơ hội kiếm tiền từ các hoạt động tương tác, chia sẻ, và quảng cáo. Tham gia X World, người dùng không chỉ được giải trí mà còn khám phá nhiều cơ hội hấp dẫn để tạo thu nhập từ các chiến dịch quảng cáo sáng tạo."
+                            </div>
+                            <div class="checkout">
+                                
+                                <button><a href="https://xworld-app.com/vi-VN/share/land?userId=5113348" target="_blank">Get Now</a></button>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="item">
+                        <!-- <img src="images/img4.png"> -->
+                        <div class="introduce">
+                            <div class="title">App airdrop tokens</div>
+                            <div class="topic">Satoshi</div>
+                            <div class="des">
+                                <!-- 20 lorem -->
+                                Ứng dụng Satoshi cho phép người dùng kiếm tiền mã hóa miễn phí bằng cách hoàn thành nhiệm vụ và tích lũy satoshi, đơn vị nhỏ nhất của Bitcoin.
+                            </div>
+                            <button class="seeMore">SEE MORE &#8599</button>
+                        </div>
+                        <div class="detail">
+                            <div class="title">Satoshi</div>
+                            <div class="des">
+                                <!-- lorem 50 -->
+                                App Satoshi là nền tảng kiếm tiền mã hóa, giúp người dùng tích lũy satoshi, đơn vị nhỏ nhất của Bitcoin, thông qua việc hoàn thành nhiệm vụ hàng ngày. Giao diện dễ sử dụng, giúp người mới bắt đầu dễ dàng tham gia vào thế giới tiền mã hóa.
+                            </div>
+                            
+                            <div class="checkout">
+                                
+                                <button><a href="https://invite.satoshiapp.xyz/9x5r1" target="_blank">Get Now</a></button>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="item">
+                        <!-- <img src="images/img5.png"> -->
+                        <div class="introduce">
+                            <div class="title">Passive income apps</div>
+                            <div class="topic">Honey gain</div>
+                            <div class="des">
+                                <!-- 20 lorem -->
+                                Honeygain giúp bạn kiếm tiền bằng cách chia sẻ băng thông internet không sử dụng. Cài đặt và để ứng dụng chạy nền để nhận thu nhập thụ động.
+                            </div>
+                            <button class="seeMore">SEE MORE &#8599</button>
+                        </div>
+                        <div class="detail">
+                            <div class="title">Honey gain</div>
+                            <div class="des">
+                                <!-- lorem 50 -->
+                                Honeygain là ứng dụng cho phép bạn kiếm tiền thụ động bằng cách chia sẻ băng thông internet không sử dụng. Chỉ cần cài đặt ứng dụng, để nó chạy nền và bạn sẽ được trả tiền theo lượng dữ liệu được chia sẻ. Phương thức đơn giản, hiệu quả cho thu nhập thêm.
+                            </div>
+                            
+                            <div class="checkout">
+                                
+                                <button><a href="https://r.honeygain.me/DANGC41D26" target="_blank">Get Now</a></button>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="item">
+                        <!-- <img src="images/img6.png"> -->
+                        <div class="introduce">
+                            <div class="title">DESIGN SLIDER</div>
+                            <div class="topic">Aerphone</div>
+                            <div class="des">
+                                <!-- 20 lorem -->
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
+                            </div>
+                            <button class="seeMore">SEE MORE &#8599</button>
+                        </div>
+                        <div class="detail">
+                            <div class="title">Aerphone GHTK</div>
+                            <div class="des">
+                                <!-- lorem 50 -->
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, reiciendis suscipit nobis nulla animi, modi explicabo quod corrupti impedit illo, accusantium in eaque nam quia adipisci aut distinctio porro eligendi. Reprehenderit nostrum consequuntur ea! Accusamus architecto dolores modi ducimus facilis quas voluptatibus! Tempora ratione accusantium magnam nulla tenetur autem beatae.
+                            </div>
+                            
+                            <div class="checkout">
+                                
+                                <button><a href="#">Get Now</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrows">
+                    <button id="prev"><</button>
+                    <button id="next">></button>
+                    <button id="back">See All  &#8599</button>
+                </div>
+            </div>
+            
+           </div>
+           <!-- end of earns -->
+        
+
+        <main class="tab-content" id="Dashboard">
+            <div class="header">
+                <div class="left">
+                    <h1>Dashboard</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#" class="active">Shop</a></li>
+                    </ul>
+                </div>
+                <a href="coming.html" target="_blank" class="report">
+                    <i class='bx bx-cloud-download'></i>
+                    <span>Download App</span>
+                </a>
+            </div>
+            <!-- Insights -->
+                <ul class="insights">
+                    <li>
+                        <i class='bx bx-calendar-check'></i>
+                        <span class="info">
+                            <h3 id="paid-orders">1,074</h3>
+                            <p>Paid Order</p>
+                        </span>
+                    </li>
+                    <li>
+                        <i class='bx bx-show-alt'></i>
+                        <span class="info">
+                            <h3 id="site-visit">3,944</h3>
+                            <p>Site Visit</p>
+                        </span>
+                    </li>
+                    <li>
+                        <i class='bx bx-line-chart'></i>
+                        <span class="info">
+                            <h3 id="searches">14,721</h3>
+                            <p>Searches</p>
+                        </span>
+                    </li>
+                    <li>
+                        <i class='bx bx-dollar-circle'></i>
+                        <span class="info">
+                            <h3 id="total-sales">$6,742</h3>
+                            <p>Total Sales</p>
+                        </span>
+                    </li>
+                </ul>
+
+<!-- End of Insights -->
+            <div class="bottom-data">
+                <div class="orders">
+                    <div class="hot-products">
+                        <h2>Hot Products</h2>
+                        <div id="card-area">
+                            <div class="box">
+                                <img alt="Product 1" src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lt1zzedclryc37">
+                                <div class="overlay">
+                                    <h3></h3>
+                                    <p></p>
+                                    <a href="https://shopee.vn/S%E1%BB%AFa-ch%E1%BB%91ng-n%E1%BA%AFng-b%E1%BA%A3o-v%E1%BB%87-ho%C3%A0n-h%E1%BA%A3o-Anessa-Perfect-UV-Sunscreen-Skincare-Milk-60ml-i.58411241.2029406183?sp_atk=5f66a1f8-e281-493e-b863-2c2b4a779ebb&xptdk=5f66a1f8-e281-493e-b863-2c2b4a779ebb" target="_blank">    Buy Now</a>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <img alt="Product 2" src="https://down-bs-vn.img.susercontent.com/vn-11134207-7r98o-luedh54gyuxd4c.webp">
+                                <div class="overlay">
+                                    <h3></h3>
+                                    <p></p>
+                                    <a href="https://s.shopee.vn/1VfZi02Vqy" target="_blank">Buy Now</a>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <img alt="Product 3" src="https://down-bs-vn.img.susercontent.com/vn-11134201-23030-gnmgaam6jfov77.webp">
+                                <div class="overlay">
+                                    <h3></h3>
+                                    <p></p>
+                                    <a href="https://s.shopee.vn/20bqJBOo4m" target="_blank">Buy Now</a>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <img alt="Product 6" src="https://down-bs-vn.img.susercontent.com/vn-11134207-7r98o-ly5ay8wzlrio4f.webp">
+                                <div class="overlay">
+                                    <h3></h3>
+                                    <p></p>
+                                    <a href="https://s.shopee.vn/AKGzZ5o0IA" target="_blank">Buy Now</a>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <img alt="Product 4" src="https://cdn.statically.io/img/klfoodie.com/f=auto/wp-content/uploads/2021/06/IMG_7433.jpg">
+                                <div class="overlay">
+                                    <h3></h3>
+                                    <p></p>
+                                    <a href="https://go.isclix.com/deep_link/v6/6472106158342289824/4751584435713464237?sub1=7137312&sub4=oneatapp&url_enc=aHR0cHM6Ly9zaG9wZWUudm4v" target="_blank">Buy Now</a>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <img alt="Product 5" src="https://down-bs-vn.img.susercontent.com/vn-11134207-7r98o-lq48pn3sqdw2b7.webp">
+                                <div class="overlay">
+                                    <h3></h3>
+                                    <p></p>
+                                    <a href="https://s.shopee.vn/9UhsZQcsTU" target="_blank">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+
+                <!-- Reminders -->
+                <div class="pin">
+                    <section class="battery">
+                        <div class="battery__card">
+                            <div class="battery__data">
+                                <p class="battery__text">Battery</p>
+                                <h1 class="battery__percentage">
+                                    20%
+                                </h1>
+            
+                                <p class="battery__status">
+                                    Low battery <i class="ri-plug-line"></i>
+                                </p>
+                            </div>
+            
+                            <div class="battery__pill">
+                                <div class="battery__level">
+                                    <div class="battery__liquid"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                
+                <div class="footer">
+                    <p>&copy; 2024 A-ShopVN | All Rights Reserved.</p>
+                </div>
+
+                <!-- End of Reminders-->
+
+            </div>
+
+        </main>
+
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="shop.js"></script>
+</body>
+
+</html>
